@@ -309,10 +309,10 @@ private val defaultCharset: Charset? =
         EncodingRegistry.getInstance().getDefaultCharsetForPropertiesFiles(file)
 ```
 
-Properties declaring a `get` and/or `set` function should place each on their only line with a normal indent (+4). Format them using the same rules as functions.
+Mutable properties declaring a `get` and/or `set` function should place each on their only line with a normal indent (+4). Format them using the same rules as functions.
 
 ```kotlin
-val directory: File? = null
+var directory: File? = null
     set(value) {
         // …
     }
